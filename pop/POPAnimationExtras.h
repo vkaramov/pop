@@ -10,7 +10,7 @@
 #import <QuartzCore/CAAnimation.h>
 
 #import <pop/POPDefines.h>
-#import <pop/POPSpringAnimation.h>
+#import "POPSpringAnimation.h"
 
 /**
  @abstract The current drag coefficient.

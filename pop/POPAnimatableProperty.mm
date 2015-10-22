@@ -64,7 +64,6 @@ NSString * const kPOPShapeLayerStrokeEnd = @"shapeLayer.strokeEnd";
 NSString * const kPOPShapeLayerStrokeColor = @"shapeLayer.strokeColor";
 NSString * const kPOPShapeLayerFillColor = @"shapeLayer.fillColor";
 NSString * const kPOPShapeLayerLineWidth = @"shapeLayer.lineWidth";
-NSString * const kPOPShapeLayerLineDashPhase = @"shapeLayer.lineDashPhase";
 
 // NSLayoutConstraint
 NSString * const kPOPLayoutConstraintConstant = @"layoutConstraint.constant";
@@ -547,16 +546,6 @@ static POPStaticAnimatablePropertyState _staticStates[] =
     },
     0.01
   },
-    
-    {kPOPShapeLayerLineDashPhase,
-        ^(CAShapeLayer *obj, CGFloat values[]) {
-            values[0] = obj.lineDashPhase;
-        },
-        ^(CAShapeLayer *obj, const CGFloat values[]) {
-            obj.lineDashPhase = values[0];
-        },
-        0.01
-    },
 
   {kPOPLayoutConstraintConstant,
     ^(NSLayoutConstraint *obj, CGFloat values[]) {
